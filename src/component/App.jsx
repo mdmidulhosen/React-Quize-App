@@ -1,14 +1,28 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "../component/styles/App.css";
-// import Illustration from "./Illustration";
+import { AuthProvider } from "../contexts/AuthContext";
 import Layout from "./Layout";
 import Results from "./Results";
-// import SignUp from "./pages/SignUp";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Quize from "./pages/Quize";
+import SignUp from "./pages/SignUp";
+
 function App() {
   return (
-    <Layout>
-      <Results />
-    </Layout>
+    <BrowserRouter>
+      <AuthProvider>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/quize" element={<Quize />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/results" element={<Results />} />
+          </Routes>
+        </Layout>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 

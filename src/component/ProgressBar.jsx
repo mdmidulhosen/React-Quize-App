@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import classNames from "./styles/ProgressBar.module.css";
 
@@ -15,12 +16,12 @@ function ProgressBar() {
           <div className={classNames.progress} style={{ width: "20%" }}></div>
         </div>
       </div>
-      <a href="result.html">
+      <Link to={"/results"}>
         <Button className={classNames.next}>
           <span>Next Question</span>
           <span className="material-icons-outlined"> arrow_forward </span>
         </Button>
-      </a>
+      </Link>
     </div>
   );
 }
