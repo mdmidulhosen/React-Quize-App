@@ -3,9 +3,9 @@ import React from "react";
 import classNames from "./styles/Form.module.css";
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
-function Form({ children, className, ...rest }) {
+function Form({ children, className }) {
   return (
-    <form className={`${className} ${classNames.form}`} action="#" {...rest}>
+    <form className={`${className} ${classNames.form}`} action="#">
       {children}
     </form>
   );

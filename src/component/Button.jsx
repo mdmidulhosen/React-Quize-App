@@ -5,7 +5,7 @@ import classNames from "./styles/Button.module.css";
 function Button(children) {
   return (
     <div className={classNames.button}>
-      <span>{children}</span>
+      <span>{children.children}</span>
     </div>
   );
 }

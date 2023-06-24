@@ -2,10 +2,11 @@
 import React from "react";
 import classNames from "./styles/TextInput.module.css";
 
-function TextInput(icon, ...rest) {
+// eslint-disable-next-line react/prop-types
+function TextInput({ icon, type, placeholder }) {
   return (
     <div className={classNames.textInput}>
-      <input {...rest} />
+      <input type={type} placeholder={placeholder} />
       <span className="material-icons-outlined"> {icon} </span>
     </div>
   );

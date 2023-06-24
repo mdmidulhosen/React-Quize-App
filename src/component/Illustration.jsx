@@ -1,9 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import SignUpImage from "../assets/images/signup.svg";
+import SignUpImage from "../assets/images/signup.png";
 import classNames from "./styles/Illustration.module.css";
 
-function Illustration() {
+export default function Illustration() {
   return (
     <div className={classNames.illustration}>
       <img src={SignUpImage} alt="Signup" />
@@ -11,4 +11,4 @@ function Illustration() {
   );
 }
 
-export default Illustration;
+// export default Illustration;

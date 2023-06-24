@@ -1,10 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 
-function CheckBox(text, ...rest) {
+// eslint-disable-next-line react/prop-types
+function CheckBox({ text }) {
   return (
     <label>
-      <input type="checkbox" {...rest} />
+      <input type="checkbox" />
       <span>{text}</span>
     </label>
   );

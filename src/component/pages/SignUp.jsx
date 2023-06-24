@@ -3,7 +3,7 @@ import React from "react";
 import Button from "../Button";
 import CheckBox from "../CheckBox";
 import Form from "../Form";
-import Illustration from "../Illustration";
+// import Illustration from "../Illustration";
 import TextInput from "../TextInput";
 import classNames from "../styles/SignUp.module.css";
 
@@ -12,8 +12,8 @@ function SignUp() {
     <>
       <h1>Create an account</h1>
       <div className={classNames.column}>
-        <Illustration />
-        <Form className={`${classNames.signup}`}>
+        {/* <Illustration /> */}
+        <Form className={classNames.signup}>
           <TextInput type="text" placeholder="Enter Name" icon="person" />
 
           <TextInput
