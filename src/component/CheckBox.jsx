@@ -2,9 +2,9 @@
 import React from "react";
 
 // eslint-disable-next-line react/prop-types
-function CheckBox({ text }) {
+function CheckBox({ text, className }) {
   return (
-    <label>
+    <label className={className}>
       <input type="checkbox" />
       <span>{text}</span>
     </label>
