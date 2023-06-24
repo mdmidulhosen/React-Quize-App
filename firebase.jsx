@@ -1,6 +1,10 @@
+import "dotenv";
+import dotenv from "dotenv";
 import { initializeApp } from "firebase/app";
-
+import "firebase/auth";
 // firebase configuration
+
+dotenv.config();
 
 const app = initializeApp({
   // eslint-disable-next-line no-undef
